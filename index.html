@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NABIL. — Entertainer / Creator | Addis Ababa</title>
+<meta name="description" content="Nabil Nur — Ethiopia's top street-interviewer, comedian & creator. Watch viral content, shop official kicks & merch, book brand campaigns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NOISE / GRAIN OVERLAY -->
+<div class="grain"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-name">NABIL<span class="dot">.</span></span>
+      <span class="brand-sub">ENTERTAINER / CREATOR</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#videos" class="nav-link">Videos</a>
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="live-badge">
+        <span class="dot-pulse"></span>
+        LIVE / NEW CONTENT
+      </div>
+      <button class="burger" id="burgerBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="mesh"></div>
+    <svg class="brush-text" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <defs>
+        <filter id="rough">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="3" seed="7" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="26"/>
+        </filter>
+      </defs>
+      <text x="50%" y="58%" text-anchor="middle" filter="url(#rough)" class="brush-word">NABIL</text>
+    </svg>
+    <div class="spray-dot d1"></div>
+    <div class="spray-dot d2"></div>
+    <div class="spray-dot d3"></div>
+  </div>
+
+  <!-- Right vertical social sidebar -->
+  <aside class="social-rail">
+    <span class="rail-line"></span>
+    <a href="#" class="rail-icon" data-label="TikTok" aria-label="TikTok">
+      <svg viewBox="0 0 24 24"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+    </a>
+    <a href="#" class="rail-icon" data-label="YouTube" aria-label="YouTube">
+      <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+    </a>
+    <a href="#" class="rail-icon" data-label="Instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.6 1.8c.46-.16 1.26-.35 2.43-.4C9.28 1.33 9.68 1.33 12 1.33zm0 1.98c-3.14 0-3.51 0-4.75.07-1.15.05-1.77.24-2.19.4-.55.21-.94.47-1.36.88-.41.42-.67.8-.88 1.36-.16.42-.35 1.04-.4 2.19-.07 1.24-.07 1.61-.07 4.75s0 3.51.07 4.75c.05 1.15.24 1.77.4 2.19.21.55.47.94.88 1.36.42.41.8.67 1.36.88.42.16 1.04.35 2.19.4 1.24.07 1.61.07 4.75.07s3.51 0 4.75-.07c1.15-.05 1.77-.24 2.19-.4a3.67 3.67 0 0 0 1.36-.88c.41-.42.67-.8.88-1.36.16-.42.35-1.04.4-2.19.07-1.24.07-1.61.07-4.75s0-3.51-.07-4.75c-.05-1.15-.24-1.77-.4-2.19a3.67 3.67 0 0 0-.88-1.36 3.67 3.67 0 0 0-1.36-.88c-.42-.16-1.04-.35-2.19-.4-1.24-.07-1.61-.07-4.75-.07zm0 3.37a5.45 5.45 0 1 1 0 10.9 5.45 5.45 0 0 1 0-10.9zm0 8.99a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.94-9.2a1.27 1.27 0 1 1-2.54 0 1.27 1.27 0 0 1 2.54 0z"/></svg>
+    </a>
+    <a href="#" class="rail-icon" data-label="Telegram" aria-label="Telegram">
+      <svg viewBox="0 0 24 24"><path d="M22.05 3.24 2.9 10.66c-1.3.52-1.29 1.24-.24 1.56l4.92 1.54 1.9 5.83c.24.65.4.9.82.9.32 0 .46-.14.63-.3l3-2.86 4.98 3.66c.9.5 1.55.24 1.78-.85l3.22-15.2c.32-1.35-.5-1.95-1.86-1.5zM8.6 14.24l9.85-8.9c.44-.38-.1-.58-.68-.2l-12.15 7.65-5.24-1.64 18.15-7 -3.16 14.9-4.53-3.35-2.24 2.05z"/></svg>
+    </a>
+  </aside>
+
+  <div class="hero-content">
+    <!-- Center subject frame -->
+    <div class="subject-frame">
+      <div class="subject-glow"></div>
+      <div class="glow-ring"></div>
+      <div class="subject-photo-wrap">
+        <img class="subject-photo" src="nebil2.jpg" alt="Nabil Nur">
+        <div class="subject-overlay"></div>
+        <span class="hud-corner hud-tl"></span>
+        <span class="hud-corner hud-tr"></span>
+        <span class="hud-corner hud-bl"></span>
+        <span class="hud-corner hud-br"></span>
+      </div>
+      <span class="subject-tag">NABIL NUR</span>
+    </div>
+
+    <!-- Floating stat cards -->
+   <div class="stat-cards">
+  <div class="stat-card card-1">
+    <span class="stat-num" data-count="750" data-suffix="K+">0</span>
+    <span class="stat-label">TikTok Followers</span>
+  </div>
+  <div class="stat-card card-2">
+    <span class="stat-num" data-count="19" data-suffix="M+">0</span>
+    <span class="stat-label">TikTok Likes</span>
+  </div>
+  <div class="stat-card card-3">
+    <span class="stat-num" data-count="300" data-suffix="K+">0</span>
+    <span class="stat-label">YouTube Subs</span>
+  </div>
+</div>
+  </div>
+
+  <!-- Bottom secondary data bar -->
+  <div class="data-bar">
+  <div class="data-bar-inner">
+    <div class="data-item">
+      <span class="data-icon">🎓</span>
+      <span class="data-key">DEGREE</span>
+      <span class="data-val">CIVIL ENGINEER (AAiT)</span>
+    </div>
+    <span class="data-sep"></span>
+    <div class="data-item">
+      <span class="data-icon">🏛️</span>
+      <span class="data-key">FOUNDER</span>
+      <span class="data-val">ELEVATE DESIGN</span>
+    </div>
+    <span class="data-sep"></span>
+    <div class="data-item">
+      <span class="data-icon">🎬</span>
+      <span class="data-key">ACTOR</span>
+      <span class="data-val">"LIYA" TV DRAMA</span>
+    </div>
+  </div>
+</div>
+  <div class="scroll-cue"><span></span>SCROLL</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-container about-grid">
+    <div class="about-copy">
+      <span class="eyebrow">// 01 — WHO IS NABIL</span>
+      <h2 class="section-title">CREATOR, ACTOR & <span class="hl">CIVIL ENGINEER</span></h2>
+      <p class="lead">
+        Nabil Nur is a prominent Ethiopian digital creator, actor, and Civil Engineering graduate from AAiT. Known for his viral entertainment, lifestyle vlogs, and street engagement across Addis Ababa.
+      </p>
+      <p class="body-text">
+        Beyond reaching millions of fans across TikTok and YouTube, Nabil is an entrepreneur serving as the founder of Elevate Finishing & Interior Design, and has expanded into television acting starring in the Ethiopian drama series "Liya".
+      </p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <h4>Entertainment & Vlogs</h4>
+          <p>Over 750K+ TikTok followers and 300K+ YouTube subscribers.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <h4>TV Acting ("Liya")</h4>
+          <p>Starring in mainstream Ethiopian limited TV drama series.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <h4>Elevate Design</h4>
+          <p>Founder & CEO of Elevate Finishing & Interior Design.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-visual">
+      <div class="about-frame">
+        <img src="nebil3.jpg" alt="Nabil Nur" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:22px;">
+        <span class="frame-corner tl"></span>
+        <span class="frame-corner br"></span>
+        <div class="about-badge">AAiT GRADUATE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEOS ============ -->
+<section class="videos" id="videos">
+  <div class="section-container">
+    <div class="section-head">
+      <span class="eyebrow">// 02 — MEDIA</span>
+      <h2 class="section-title">LATEST <span class="hl">DROPS</span></h2>
+    </div>
+
+    <div class="video-grid">
+      <article class="video-card">
+        <div class="thumb thumb-1">
+          <span class="badge">Vlogs</span>
+          <button class="play-btn" aria-label="Play video">▶</button>
+          <span class="views">👁 28K views</span>
+        </div>
+        <h3>"gebiche ayehut</h3>
+        <p class="video-meta">Vlogs  · 3weeks days ago</p>
+      </article>
+
+      <article class="video-card">
+        <div class="thumb thumb-2">
+          <span class="badge">Vlogs</span>
+          <button class="play-btn" aria-label="Play video">▶</button>
+          <span class="views">👁 12K views</span>
+        </div>
+        <h3>yetekelekelew ketema </h3>
+        <p class="video-meta">Vlogs ·1 month ago</p>
+      </article>
+
+      <article class="video-card">
+        <div class="thumb thumb-3">
+          <span class="badge">Vlogs</span>
+          <button class="play-btn" aria-label="Play video">▶</button>
+          <span class="views">👁 46K views</span>
+        </div>
+        <h3>wiya lay be mekina hedku</h3>
+        <p class="video-meta">Vlogs · 1 month ago</p>
+      </article>
+
+     
+
+    <div class="section-cta">
+      <a href="#" class="btn btn-outline">View All Videos →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="shop" id="shop">
+  <div class="section-container">
+    <div class="section-head">
+      <span class="eyebrow">// 03 — SHOP</span>
+      <h2 class="section-title">NABIL'S KICKS <span class="hl">&amp; MERCH STORE</span></h2>
+      <p class="section-sub">Official gear. Limited drops. Order direct — no middleman.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card" data-name="Premium Urban Sneakers" data-price="6500">
+        <div class="product-img sneaker-1">
+          <span class="stock-tag">In Stock</span>
+        </div>
+        <div class="product-info">
+          <h3>Premium Urban Sneakers</h3>
+          <p class="product-desc">Street-ready comfort, built for the everyday hustle.</p>
+          <div class="product-footer">
+            <span class="price"><span class="etb">ETB</span> 6,500</span>
+            <div class="qty-control" data-qty="1">
+              <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <button class="btn btn-order">Order Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-name="Street Edition High-Tops" data-price="7200">
+        <div class="product-img sneaker-2">
+          <span class="stock-tag">In Stock</span>
+        </div>
+        <div class="product-info">
+          <h3>Street Edition High-Tops</h3>
+          <p class="product-desc">Bold silhouette, premium grip — made to stand out.</p>
+          <div class="product-footer">
+            <span class="price"><span class="etb">ETB</span> 7,200</span>
+            <div class="qty-control" data-qty="1">
+              <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <button class="btn btn-order">Order Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-name='Nabil Signature "Street Energy" Hoodie' data-price="3500">
+        <div class="product-img hoodie">
+          <span class="stock-tag">Limited</span>
+        </div>
+        <div class="product-info">
+          <h3>Signature "Street Energy" Hoodie</h3>
+          <p class="product-desc">Heavyweight cotton. Nabil's signature print on the back.</p>
+          <div class="product-footer">
+            <span class="price"><span class="etb">ETB</span> 3,500</span>
+            <div class="qty-control" data-qty="1">
+              <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <button class="btn btn-order">Order Now</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-name="Collector Edition Caps" data-price="1800">
+        <div class="product-img cap">
+          <span class="stock-tag">Limited</span>
+        </div>
+        <div class="product-info">
+          <h3>Collector Edition Caps</h3>
+          <p class="product-desc">Embroidered logo cap — one per collector, while supplies last.</p>
+          <div class="product-footer">
+            <span class="price"><span class="etb">ETB</span> 1,800</span>
+            <div class="qty-control" data-qty="1">
+              <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+              <span class="qty-val">1</span>
+              <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <button class="btn btn-order">Order Now</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND PARTNERSHIPS ============ -->
+<section class="brands" id="brands">
+  <div class="section-container">
+    <div class="section-head">
+      <span class="eyebrow">// 04 — PARTNERSHIPS</span>
+      <h2 class="section-title">BRAND <span class="hl">CAMPAIGNS</span></h2>
+      <p class="section-sub">Trusted by top-tier corporate brands including Coca-Cola Beverages Africa and Fanta.</p>
+    </div>
+
+    <div class="accordion" id="accordion">
+      <div class="acc-item active">
+        <button class="acc-head">
+          <span class="acc-num">01</span>
+          <span class="acc-title">Short-Form Promo</span>
+          <span class="acc-price">50,000 ETB</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <p>A single dedicated short-form video (Reel/TikTok/YouTube Short) featuring your product or brand naturally woven into Nabil's content style. Includes 1 round of revisions and usage rights for organic posting.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head">
+          <span class="acc-num">02</span>
+          <span class="acc-title">Premium Campaign</span>
+          <span class="acc-price">100,000 ETB</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <p>Full multi-platform campaign: 3 pieces of content , sketches, and vlogs, dedicated shoutouts, and story features. Includes performance reporting and extended usage rights.</p>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head">
+          <span class="acc-num">03</span>
+          <span class="acc-title">Event Appearance</span>
+          <span class="acc-price">110,000 ETB</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <div class="acc-body">
+          <p>Nabil hosts, appears, or covers your event live — product launches, store openings, activations — with on-the-day content capture and post-event recap posts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<section class="contact" id="contact">
+  <div class="section-container contact-grid">
+    <div class="contact-copy">
+      <span class="eyebrow">// 05 — GET IN TOUCH</span>
+      <h2 class="section-title">LET'S WORK<br><span class="hl">TOGETHER</span></h2>
+      <p class="body-text">
+        Booking a campaign, ordering merch, or just want to say what's up — reach out
+        directly and the team will get back to you fast.
+      </p>
+      <div class="contact-socials">
+        <a href="#" class="social-pill">TikTok</a>
+        <a href="#" class="social-pill">YouTube</a>
+        <a href="#" class="social-pill">Instagram</a>
+        <a href="#" class="social-pill">Telegram</a>
+      </div>
+    </div>
+
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row">
+        <label>Full Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>Phone / Telegram
+          <input type="text" name="contact" placeholder="+251 9xx xxx xxx" required>
+        </label>
+      </div>
+      <label>Inquiry Type
+        <select name="type">
+          <option>Brand Partnership</option>
+          <option>Event Booking</option>
+          <option>Shop Order</option>
+          <option>General Question</option>
+        </select>
+      </label>
+      <label>Message
+        <textarea name="message" rows="4" placeholder="Tell us what you're looking for..." required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary full">Send Message</button>
+    </form>
+  </div>
+
+  <footer class="site-footer">
+    <div class="section-container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">NABIL<span class="dot">.</span></span>
+        <span class="brand-sub">ENTERTAINER / CREATOR — ADDIS ABABA</span>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Nabil Nur. All rights reserved.</p>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ ORDER MODAL ============ -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <span class="eyebrow">QUICK ORDER</span>
+    <h3 id="modalProductName">Product Name</h3>
+    <p class="modal-price">Total: <span id="modalTotal">ETB 0</span></p>
+
+    <form id="orderForm">
+      <label>Full Name
+        <input type="text" name="fullname" placeholder="Your name" required>
+      </label>
+      <label>Phone Number
+        <input type="tel" name="phone" placeholder="+251 9xx xxx xxx" required>
+      </label>
+      <label>Delivery Address
+        <input type="text" name="address" placeholder="City, area" required>
+      </label>
+      <div class="modal-choice">
+        <p class="choice-label">Send order via:</p>
+        <div class="choice-btns">
+          <button type="submit" class="btn btn-telegram" data-channel="telegram">
+            <svg viewBox="0 0 24 24"><path d="M22.05 3.24 2.9 10.66c-1.3.52-1.29 1.24-.24 1.56l4.92 1.54 1.9 5.83c.24.65.4.9.82.9.32 0 .46-.14.63-.3l3-2.86 4.98 3.66c.9.5 1.55.24 1.78-.85l3.22-15.2c.32-1.35-.5-1.95-1.86-1.5z"/></svg>
+            Telegram
+          </button>
+          <button type="submit" class="btn btn-whatsapp" data-channel="whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm0 18.02c-1.5 0-2.96-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.32a8.02 8.02 0 0 1-1.24-4.3c0-4.42 3.6-8.02 8.03-8.02 2.14 0 4.16.84 5.67 2.35a7.96 7.96 0 0 1 2.35 5.68c0 4.43-3.6 8.02-8.02 8.02z"/></svg>
+            WhatsApp
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
