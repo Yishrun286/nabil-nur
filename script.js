@@ -5,8 +5,8 @@
   'use strict';
 
   /* ---------- Config: business contact numbers ---------- */
-  const TELEGRAM_USERNAME = 'nabilnur_official'; // replace with real handle
-  const WHATSAPP_NUMBER   = '251900000000';       // replace with real number, no +
+  const TELEGRAM_USERNAME = 'Nebilnur1';
+  const WHATSAPP_NUMBER   = '+251 93 030 5014';       // replace with real number, no +
 
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById('year');
@@ -201,16 +201,28 @@ Address: ${address}`;
     showToast(`Order ready — opening ${channel === 'whatsapp' ? 'WhatsApp' : 'Telegram'}...`);
   });
 
-  /* ---------- Booking form ---------- */
+ /* ---------- Booking form ---------- */
   const bookingForm = document.getElementById('bookingForm');
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      const formData = new FormData(bookingForm);
+      const name = formData.get('name');
+      const contact = formData.get('contact');
+      const type = formData.get('type');
+      const message = formData.get('message');
+
+      const text = `📩 *New Contact Message*\n\n*Name:* ${name}\n*Contact/Phone:* ${contact}\n*Inquiry Type:* ${type}\n*Message:* ${message}`;
+      const encoded = encodeURIComponent(text);
+      
+      // በቀጥታ ወደ ዋትስአፕ እንዲመጣ ከፈለጉ (የራሰን ስልክ ቁጥር ያስገቡ)
+      const whatsappNumber = '+251 93 030 5014'; 
+      window.open(`https://wa.me/${whatsappNumber}?text=${encoded}`, '_blank');
+
       bookingForm.reset();
-      showToast('Message sent — Nabil\'s team will reach out soon!');
+      showToast('Message ready — opening WhatsApp...');
     });
   }
-
   /* ---------- Toast ---------- */
   const toast = document.getElementById('toast');
   let toastTimer = null;
