@@ -716,3 +716,161 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .pillar{ grid-template-columns:auto 1fr; }
   .footer-inner{ flex-direction:column; align-items:flex-start; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   VENTURES
+========================================================= */
+.ventures{ padding:100px 0; }
+.venture-grid{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:26px;
+}
+.venture-card{
+  background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius-md);
+  padding:28px; text-align:center;
+  transition:transform 0.3s var(--ease), border-color 0.3s;
+}
+.venture-card:hover{ transform:translateY(-6px); border-color:var(--yellow-dim); }
+.venture-logo-slot{
+  aspect-ratio:16/9; border-radius:var(--radius-sm);
+  border:1.5px dashed var(--border-strong);
+  background:rgba(255,255,255,0.02);
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:20px;
+}
+.logo-placeholder{
+  font-family:var(--ff-display); letter-spacing:0.06em; font-size:1.1rem;
+  color:var(--text-faint); text-transform:uppercase;
+}
+.venture-card h3{ margin:0 0 10px; font-size:1.15rem; }
+.venture-card p{ margin:0; color:var(--text-dim); font-size:0.9rem; line-height:1.6; }
+
+
+
+
+
+
+* =========================================================
+   MODAL
+========================================================= */
+.modal-overlay{
+  position:fixed; inset:0; z-index:1000;
+  background:rgba(6,6,8,0.75); backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none; transition:opacity 0.25s;
+  padding:20px;
+}
+.modal-overlay.open{ opacity:1; pointer-events:auto; }
+.modal-box{
+  position:relative; width:min(440px, 100%);
+  background:var(--bg-elevated); border:1px solid var(--border-strong); border-radius:var(--radius-lg);
+  padding:32px; transform:translateY(20px) scale(0.97); transition:transform 0.3s var(--ease);
+  max-height:90vh; overflow-y:auto;
+}
+.modal-overlay.open .modal-box{ transform:translateY(0) scale(1); }
+.modal-close{
+  position:absolute; top:18px; right:18px; background:none; border:none; color:var(--text-dim); font-size:1.1rem;
+}
+.modal-close:hover{ color:var(--yellow); }
+.modal-box h3{ font-size:1.3rem; margin:6px 0 4px; }
+.modal-price{ color:var(--yellow); font-weight:800; margin-bottom:20px; }
+#orderForm{ display:flex; flex-direction:column; gap:14px; }
+#orderForm label{ display:flex; flex-direction:column; gap:6px; font-size:0.8rem; font-weight:700; color:var(--text-dim); }
+#orderForm input{
+  background:var(--bg); border:1px solid var(--border-strong); border-radius:var(--radius-sm);
+  padding:11px 14px; color:var(--text); font-size:0.92rem;
+}
+#orderForm input:focus{ border-color:var(--yellow); outline:none; }
+.choice-label{ font-size:0.8rem; color:var(--text-dim); margin:6px 0 10px; font-weight:700; }
+.choice-btns{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.btn-telegram, .btn-whatsapp{
+  color:#fff; gap:8px; padding:13px 16px;
+}
+.btn-telegram{ background:#229ED9; }
+.btn-whatsapp{ background:#25D366; }
+.btn-telegram svg, .btn-whatsapp svg{ width:16px; height:16px; fill:#fff; }
+.btn-telegram:hover, .btn-whatsapp:hover{ filter:brightness(1.1); transform:translateY(-2px); }
+
+.toast{
+  position:fixed; bottom:28px; left:50%; transform:translateX(-50%) translateY(20px);
+  background:var(--yellow); color:#14140f; font-weight:700; font-size:0.9rem;
+  padding:14px 24px; border-radius:999px; z-index:2000;
+  opacity:0; pointer-events:none; transition:all 0.3s var(--ease);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+.toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 1024px){
+  .about-grid, .contact-grid{ grid-template-columns:1fr; }
+  .video-grid{ grid-template-columns:repeat(2,1fr); }
+  .product-grid{ grid-template-columns:repeat(2,1fr); }
+  .venture-grid{ grid-template-columns:repeat(2,1fr); }
+  .collab-grid{ grid-template-columns:repeat(3,1fr); }
+  .brush-word{ font-size:135px; }
+}
+
+@media (max-width: 860px){
+  .main-nav{
+    position:fixed; top:74px; left:0; right:0; z-index:400;
+    background:rgba(12,13,16,0.98); backdrop-filter:blur(14px);
+    flex-direction:column; align-items:center; gap:0;
+    max-height:0; overflow:hidden; transition:max-height 0.35s var(--ease);
+    border-bottom:1px solid var(--border);
+  }
+  .main-nav.open{ max-height:340px; }
+  .main-nav .nav-link{ width:100%; text-align:center; padding:18px; border-bottom:1px solid var(--border); }
+  .burger{ display:flex; }
+  .live-badge span.text{ display:none; }
+  .social-rail{ display:none; }
+  .stat-cards{ grid-template-columns:repeat(3, minmax(100px,1fr)); gap:10px; max-width:420px; }
+  .stat-card{ padding:14px 8px; }
+  .form-row{ grid-template-columns:1fr; }
+}
+
+@media (max-width: 620px){
+  .header-inner{ padding:14px 20px; }
+  .brand-name{ font-size:1.2rem; }
+  .live-badge{ font-size:0; gap:0; padding:8px; }
+  .live-badge .dot-pulse{ margin:0; }
+  .section-container{ padding:0 20px; }
+  .hero{ padding-top:100px; }
+  .brush-word{ font-size:86px; }
+  .subject-frame{ width:min(280px, 78vw); }
+  .subject-glow{ width:240px; height:240px; }
+  .stat-cards{ margin-top:-60px; gap:8px; }
+  .stat-num{ font-size:1.3rem; }
+  .stat-label{ font-size:0.58rem; }
+  .data-bar-inner{ padding:8px 6px; }
+  .data-item{ padding:8px 12px; font-size:0.7rem; }
+  .video-grid{ grid-template-columns:1fr; }
+  .product-grid{ grid-template-columns:1fr; }
+  .venture-grid{ grid-template-columns:1fr; }
+  .collab-grid{ grid-template-columns:repeat(2,1fr); }
+  .choice-btns{ grid-template-columns:1fr; }
+  .pillar{ grid-template-columns:auto 1fr; }
+  .footer-inner{ flex-direction:column; align-items:flex-start; }
+}
