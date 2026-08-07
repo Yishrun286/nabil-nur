@@ -512,10 +512,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   position:relative; aspect-ratio:1/1;
   display:flex; align-items:center; justify-content:center;
 }
-.sneaker-1{ background: url('1.jpg') center/cover; }
-.sneaker-2{ background: url('2.jpg') center/cover; }
-.hoodie{ background: url('3.jpg') center/cover; }
-.cap{ background: url('4.jpg') center/cover; }
+.sneaker-1{ background: url('image\ copy\ 2.png') center/cover; }
+.sneaker-2{ background: url('image\ copy\ 3.png') center/cover; }
+.hoodie{ background: url('image\ copy\ 4.png') center/cover; }
+.cap{ background: url('image\ copy.png') center/cover; }
 .product-img::before{
   content:''; position:absolute; width:60%; height:60%;
   border:1.5px dashed var(--border-strong); border-radius:16px;
@@ -874,3 +874,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .pillar{ grid-template-columns:auto 1fr; }
   .footer-inner{ flex-direction:column; align-items:flex-start; }
 }
+
+
+
+
+
+
+
+
